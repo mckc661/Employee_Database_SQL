@@ -23,13 +23,13 @@ where hire_date between '01/01/1986' and '12/31/1986'
 -- department number, department name, the manager's employee number,
 -- last name, first name, and start and end employment dates.
 
-Select d.dept_no, 
-	d.dept_name, 
-	m.emp_no, 
-	e.last_name, 
-	e.first_name, 
-	m.from_date, 
-	m.to_date
+Select d.dept_no 	'Dept Number', 
+	d.dept_name 	'Dept Name', 
+	m.emp_no	'Employee Number', 
+	e.last_name	'Last Name', 
+	e.first_name	'First Name', 
+	m.from_date	'From Date', 
+	m.to_date	'To Date'
 
 from departments d
 left join dept_manager m on d.dept_no=m.dept_no
